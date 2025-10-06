@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Star - 3D Night Sky Demo</title>
+    <script src="assets/js/preloader.js"></script>
+    <script type="importmap">{
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+            }
+        }</script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    </link>
+</head>
+
+<body>
+    <div class="night-sky"></div>
+    <div class="stars" id="stars"></div><canvas id="webgl-canvas"></canvas>
+    <div class="reaction-bar">
+        <div class="reaction-item" data-emoji="❤️"><span>❤️</span></div>
+        <div class="reaction-item" data-emoji="😍"><span>😍</span></div>
+        <div class="reaction-item" data-emoji="🥰"><span>🥰</span></div>
+        <div class="reaction-item" data-emoji="😆"><span>😆</span></div>
+        <div class="reaction-item" data-emoji="😙"><span>😙</span></div>
+    </div>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
