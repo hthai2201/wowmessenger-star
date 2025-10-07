@@ -219,7 +219,7 @@ function readCustomConfigFromURL() {
     const encodedData = urlParams.get("data");
 
     if (encodedData) {
-      const jsonString = decodeURIComponent(escape(atob(encodedData)));
+      const jsonString = decodeURIComponent(atob(encodedData));
       const customData = JSON.parse(jsonString);
 
       // Merge custom data with defaults
